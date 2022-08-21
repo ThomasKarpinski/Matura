@@ -1,4 +1,5 @@
-import  datetime
+import datetime
+
 with open("dane4.txt", "r") as plik:
     liczby = [int(i.strip()) for i in plik]
 
@@ -19,12 +20,13 @@ print(f"Długość:{ciagmax + 2}\nPoczątek:{liczby[start]}"
       f"\nKoniec:{liczby[start + ciagmax + 1]}")
 
 '''4.3'''
-krotnosci = max([luki. count(i) for i in set(luki)])
+krotnosci = max([luki.count(i) for i in set(luki)])
 print(krotnosci)
 najluk = [i for i in set(luki) if luki.count(i) == krotnosci]
 print(najluk)
 
 '''4.3 - szybsza wersja'''
 from collections import Counter
+
 zestawienie = Counter(luki).most_common()
 print([i for i in zestawienie if i[1] == zestawienie[0][1]])
