@@ -1,4 +1,10 @@
 def scalaj(t, lewy, prawy):
+    """
+
+    :param t: lista
+    i_lewy: liczba stoją ca po lewej stronie sprawdzanego elementu
+    i_prawy:liczba stojąca po prawej stronie środka danego wycinka
+    """
     n = len(t)
     pom = []
     for i in range(n):

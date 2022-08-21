@@ -1,4 +1,10 @@
 def sortuj(t):
+    """
+    n: długość listy
+
+    :param t: lista
+    :return: zwraca posortowaną listę
+    """
     n = len(t)
     for i in range(n - 1):
         k = i
