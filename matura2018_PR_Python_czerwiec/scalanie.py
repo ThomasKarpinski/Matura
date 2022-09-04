@@ -1,8 +1,8 @@
 plik1 = open("dane1.txt", "r")
 plik2 = open("dane2.txt", "r")
 
-dane1 = [i.split() for i in plik1]
-dane2 = [i.split() for i in plik2]
+dane1 = [[int(i) for i in j.split()] for j in plik1]
+dane2 = [[int(i) for i in j.split()] for j in plik2]
 
 '''4.1'''
 licznik = 0
@@ -53,12 +53,21 @@ for row in (range(1000)):
 print(len(counter), counter)
 
 '''4.4'''
-c1 = [3, 7, 9, 22, 45, 65, 67, 87, 88]
-c2 = [1, 4, 8, 11, 34, 55, 69, 76, 90]
-c3 = []
-for i in range(9):
-    if c1[i] > c2[i]:
-        c3.append(c1[i])
-    else:
-        c3.append(c2[i])
-print(c3)
+for i in range(len(dane1)):
+    i1 = i2 = 0
+    dane3 = []
+    while (i1 < 10) and (i2 < 10):
+        if dane1[i][i1] <= dane2[i][i2]:
+            dane3 += [dane1[i][i1]]
+            i1 += 1
+        else:
+            dane3 += [dane2[i][i2]]
+            i2 += 1
+    if i1 > i2:
+        dane3 += dane2[i][i2:]
+    if i2 > i1:
+        dane3 += dane1[i][i1:]
+    print(dane3)
+
+plik1.close()
+plik2.close()
