@@ -1,6 +1,6 @@
 def zad_b(s):
     """
-    :param s: liczba w systemie dwójkowym
+    :param s: liczba w systemie dwójkowym z dwoma cyframi po przecinku
     :return: liczba w systemie dziesiętnym
     """
     wynik = 0
