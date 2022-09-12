@@ -5,7 +5,7 @@ def zad1_b(a):
     """
     if a > 1:
         d = []
-        for i in range(1, a):
+        for i in range(1, a // 2 + 1):
             if a % i == 0:
                 d.append(i)
         suma = 0

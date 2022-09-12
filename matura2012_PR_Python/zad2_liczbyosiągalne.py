@@ -12,5 +12,5 @@ def zad2_c(n):
     return 0
 
 
-wynik = zad2_c(9999)
-print(wynik) if wynik != 0 else "NIE"
+wynik = zad2_c(9993)
+print(wynik) if wynik != 0 else print("NIE")
