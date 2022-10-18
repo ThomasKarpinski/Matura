@@ -43,7 +43,7 @@ with open("ciagi.txt", "r") as plik:
 
     def semiPrimeNumbers():
         semiPrimes = []
-        decValues = [int(x, 2) for x in sequences]  # z bitów na dziesiętne
+        decValues = [int(i, 2) for i in sequences]  # z bitów na dziesiętne
         for number in decValues:  # rób dla każdej liczby
             if number > 1:  # 1 nie może być półpierwszą
                 if (hasPrimeDividers(number)):
