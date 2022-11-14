@@ -45,7 +45,8 @@ second = 0
 for j in range(len(lista_liczb) - 1):
     first = lista_liczb[j]
     second = lista_liczb[j + 1]
-    if first + 2 == second or first - 2 == second:
-        licznik += 1
-        print(first, second)
+    if pierwsza(first) and pierwsza(second):
+        if first + 2 == second or first - 2 == second:
+            licznik += 1
+            print(first, second)
 print(f"ilość liczb bliźniaczych: {licznik}")
