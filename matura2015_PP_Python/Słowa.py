@@ -6,7 +6,5 @@ with open("slowa.txt", "r") as plik:
         print(f"Słów {i} -literowych jest {len([z for z in slowa if len(z) == i])}")
 
     """b)"""
-    x = 0
-    lista = []
     for slowo in slowa:
         print(f"{slowo} {slowa.count(slowo)} {slowa.count(slowo[::-1])}")
