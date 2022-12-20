@@ -17,7 +17,7 @@ def horner_t(a, p):
     return h
 
 
-print(horner_t('173', 8))
+
 
 
 def horner_l(a, p):
@@ -29,4 +29,3 @@ def horner_l(a, p):
     return h
 
 
-print(horner_l(173, 8))

@@ -18,4 +18,5 @@ def zamien10_p(liczba, p):
     return w
 
 
-print(zamien10_p(135, 2))
+print(zamien10_p(415, 16))
+print(hex(43))
