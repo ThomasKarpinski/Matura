@@ -1,0 +1,22 @@
+def rysuj(x, y):
+    if 2*x <= y:
+        l.append(2*x)
+        rysuj(2*x, y)
+    if 2*x+1 <= y:
+        l.append(2*x+1)
+        rysuj(2*x+1, y)
+    return l
+
+
+with open("pary.txt", "r") as plik:
+    f = [f.split() for f in plik]
+    kol1 = [int(i[0]) for i in f]
+    kol2 = [int(i[1]) for i in f]
+
+    pary = list(zip(kol1, kol2))
+
+    for i in range(len(pary)):
+        l = []
+        rysuj(kol1[i], kol2[i])
+        if kol2[i] in l:
+            print(kol1[i], kol2[i])
