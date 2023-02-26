@@ -41,3 +41,7 @@ def find_goldbach_no(n):
         if n - p in primes:
             return p, n - p
     return None
+
+
+print(find_goldbach_no(190))
+print(find_goldbach(190))
