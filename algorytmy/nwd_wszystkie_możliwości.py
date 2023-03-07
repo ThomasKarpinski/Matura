@@ -6,10 +6,10 @@ def NWD(a, b):
 
 
 def nwd_kilka(l):
-    nwd = l[0]
+    a = l[0]
     for i in range(1, len(l)):
-        nwd = NWD(nwd, l[i])
-    return nwd
+        a = NWD(a, l[i])
+    return a
 
 
 def NWW(a, b):

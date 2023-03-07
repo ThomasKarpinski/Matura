@@ -29,3 +29,4 @@ def horner_l(a, p):
     return h
 
 
+print(horner_l(101, 2))
