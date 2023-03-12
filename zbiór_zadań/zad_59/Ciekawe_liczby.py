@@ -1,3 +1,6 @@
+import functools
+import operator
+
 with open("liczby.txt", "r") as dane:
     liczby = [int(i) for i in dane]
 
@@ -42,3 +45,20 @@ for wiersz in liczby:
     if odwracanie(odwracanie(wiersz) + wiersz) == (odwracanie(wiersz) + wiersz):
         licz += 1
 print(licz)
+
+"""59.3"""
+moce = []
+moc_1 = []
+for wiersz in liczby:
+    k = 0
+    while wiersz > 10:
+        wiersz = [int(i) for i in str(wiersz)]
+        wiersz = functools.reduce(operator.mul, wiersz)
+        k += 1
+    moce.append(k)
+    if k == 1:
+        moc_1.append(wiersz)
+# print(moce)
+for i in range(1, 9):
+    print(f"{i}:{moce.count(i)}")
+print(f"najmniejsza: {min(moc_1)}, największa: {max(moc_1)}")

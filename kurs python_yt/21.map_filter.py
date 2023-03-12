@@ -1,5 +1,10 @@
+import functools
+import operator
+
 liczby = [2, 10, 12, 15, 20, 25, 30, 35]
 liczby2 = ['1', '2', '3']
+liczba = 1234
+liczba = [int(i) for i in str(liczba)]
 
 
 # Mapy
@@ -20,3 +25,6 @@ print(list(wynik4))  # zamiana każdego elementu w liczby2 na int
 
 wynik3 = filter(lambda x: x % 2 == 0, liczby)
 print(list(wynik3))
+
+wynik5 = functools.reduce(operator.mul, liczba)
+print(wynik5)
