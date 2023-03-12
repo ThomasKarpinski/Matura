@@ -1,5 +1,4 @@
 def dzielniki(n):
-
     d = 1
     l = []
     while d * d <= n:
@@ -10,5 +9,6 @@ def dzielniki(n):
             l.append(n // d)
         d += 1
     return l
+
 
 print(dzielniki(int(input("Podaj liczbę: "))))
