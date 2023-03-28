@@ -13,13 +13,13 @@ else:
 
 
 # rekurencyjnie
-def iteratively(num):
+def fib(num):
     if num == 0:
         return num
     elif num == 1:
         return num
     else:
-        return iteratively(num - 1) + iteratively(num - 2)
+        return fib(num - 1) + fib(num - 2)
 
 
-print(iteratively(11))
+print(fib(11))

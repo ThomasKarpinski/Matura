@@ -21,11 +21,11 @@ def anagramy():
     s2 = input("podaj drugie słowo: ")
     if len(s1) == len(s2):
         if sortuj(s1) == sortuj(s2):
-            print(True)
+            return True
         else:
-            print(False)
+            return False
     else:
-        print(False)
+        return False
 
 
 anagramy()

@@ -30,3 +30,5 @@ def horner_l(a, p):
 
 
 print(horner_l(101, 2))
+print(horner_t('F8', 16))
+print(int('F8', 16))
