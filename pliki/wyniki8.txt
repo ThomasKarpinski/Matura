@@ -1,0 +1,46 @@
+8.1
+ID_FILMU	ilość	TYTUL
+f77	        20	Mój czas dla ciebie
+8.2
+seriale: 40
+pełnometrażowe: 53
+8.3
+NAZWISKO	IMIE
+Bendelewska	Emilia
+Biedroń	Aleksandra
+Bigorowska	Klaudia
+Bureta	Agnieszka
+Ciępiel	Michał
+Czekalski	Dawid
+Dampc	Marta
+Gaca	Magdalena
+Gołdyn	Kamila
+Gołdyn	Monika
+Górski	Daniel
+Grygorowicz	Robert
+Jagodziński	Piotr
+Jańczak	Monika
+Kania	Monika
+Kausa	Patryk
+Kaźmierczak	Anna
+Klunder	Maria
+Krasińska	Wioletta
+Kujawa	Artur
+Lackowski	Piotr
+Lafert	Kaja
+Lejer	Hanna
+Łata	Natalia
+Michalska	Stefania
+Ornowska	Izabela
+Owczarzak	Anna
+Paszkiet	Paulina
+Pławski	Marek
+Rzepka	Agata
+Sawicka	Patrycja
+Senger	Adrianna
+Syka	Wojciech
+Witt	Agnieszka
+Żbikowska	Katarzyna
+8.4
+ID_FILMU	TYTUL
+f48	        I że cię nie opuszczę

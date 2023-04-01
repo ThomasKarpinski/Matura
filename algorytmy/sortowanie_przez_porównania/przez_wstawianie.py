@@ -14,3 +14,4 @@ def sortuj(t):
             k -= 1
         t[k + 1] = pom
     return t
+print(sortuj([7,4,5,4,2,3,5,1,9]))

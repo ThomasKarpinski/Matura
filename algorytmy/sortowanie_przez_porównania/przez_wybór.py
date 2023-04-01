@@ -13,3 +13,5 @@ def sortuj(t):
                 k = j
             t[k], t[i] = t[i], t[k]
     return t
+
+print(sortuj([7,4,5,4,2,3,5,1,9]))
